@@ -12,6 +12,7 @@ public class TelaLogin extends javax.swing.JFrame {
      * Creates new form TelaLogin
      */
     public TelaLogin() {
+        // Tamanho das telas padrão [1061, 663]
         initComponents();
         
     }
