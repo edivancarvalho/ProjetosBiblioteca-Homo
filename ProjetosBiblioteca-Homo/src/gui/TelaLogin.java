@@ -1,6 +1,7 @@
 package gui;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
+import persistencias.FormularioSenha;
 
 /**
  *
@@ -105,8 +106,12 @@ public class TelaLogin extends javax.swing.JFrame {
 
     private void jButton_LoginEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LoginEntrarActionPerformed
         // TODO add your handling code here:
-        String senha = String.valueOf(jPasswordField_LoginSenha.getPassword());
-        if (jTextField_LoginUsuario.getText().equals("admin") && senha.equals("admin")){
+        FormularioSenha objeto = new FormularioSenha(jTextField_LoginUsuario.getText(), jPasswordField_LoginSenha.getPassword().toString());
+        //FormularioSenha objeto1 = new FormularioSenha();
+        //objeto1.setUsuario(jTextField_LoginUsuario.getText());
+        //objeto1.setSenhas(jPasswordField_LoginSenha.getPassword().toString());
+        
+        if (objeto.validaSenha(objeto)){
             //JOptionPane.showMessageDialog(null, "senha correta");
             TelaMenuPrincipal abrirTela = new TelaMenuPrincipal();
             abrirTela.setVisible(true);
@@ -116,6 +121,20 @@ public class TelaLogin extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(null, "Login ou senha incorretas!");
         }
+
+            
+            //        String senha = String.valueOf(jPasswordField_LoginSenha.getPassword());
+//        if (jTextField_LoginUsuario.getText().equals("admin") && senha.equals("admin")){
+//            //JOptionPane.showMessageDialog(null, "senha correta");
+//            TelaMenuPrincipal abrirTela = new TelaMenuPrincipal();
+//            abrirTela.setVisible(true);
+//            dispose();
+//            //TelaMenuPrincipal.abrir();
+//            // GuiaMenuPrincipal
+//        }else{
+//            JOptionPane.showMessageDialog(null, "Login ou senha incorretas!");
+//        }
+
     }//GEN-LAST:event_jButton_LoginEntrarActionPerformed
 
     private void jButton_SairLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SairLoginActionPerformed
