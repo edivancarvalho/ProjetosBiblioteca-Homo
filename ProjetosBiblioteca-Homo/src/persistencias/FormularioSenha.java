@@ -18,5 +18,4 @@ public class FormularioSenha {
     public String getSenhas() {
         return senhas;
     }
-       //
 }
