@@ -13,21 +13,29 @@ import javax.swing.JOptionPane;
  * @author edivan
  */
 public class FormularioSenha implements CRUDsenha{
+    
+//    private String wordlist;
     private String senhas  = "admin";
     private String usuario  = "admin";
 
 // Contrutores
 
     public FormularioSenha() {
+//        this.wordlist = "";
         this.senhas = "admin";
         this.usuario = "admin";
     }
     
     public FormularioSenha(String senhas, String usuario){
+//        this.wordlist = "";
         this.senhas = senhas;
         this.usuario = usuario;
     }
 // Metodo get    
+
+    public FormularioSenha(String wordlisttxt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     public String getSenhas() {
         return senhas;

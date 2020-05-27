@@ -9,12 +9,12 @@ package gui;
  *
  * @author edivan
  */
-public class TelaCadastroUsuario extends javax.swing.JInternalFrame {
+public class TelaCadastroUsuario1 extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form TelaCadastroUsuario
      */
-    public TelaCadastroUsuario() {
+    public TelaCadastroUsuario1() {
         initComponents();
     }
 

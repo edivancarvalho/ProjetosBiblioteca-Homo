@@ -1,6 +1,7 @@
 package gui;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 import persistencias.FormularioSenha;
 
 /**
@@ -8,15 +9,24 @@ import persistencias.FormularioSenha;
  * @author edivan
  */
 public class TelaLogin extends javax.swing.JFrame {
-
+    
+    FormularioSenha wordlisSenha;
     /**
      * Creates new form TelaLogin
      */
     public TelaLogin() {
         // Tamanho das telas padrão [1061, 663]
         initComponents();
-        
+//        wordlisSenha = new FormularioSenha("wordlist.txt");
+            
     }
+    // Limpa Tela
+//    public void limparTelaLogin(){
+//        jTextField_LoginUsuario.setText("");
+//        jPasswordField_LoginSenha.setText("");
+//    }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
