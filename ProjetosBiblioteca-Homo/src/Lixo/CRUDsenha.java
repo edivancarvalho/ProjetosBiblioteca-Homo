@@ -1,4 +1,4 @@
-package interfaces;
+package Lixo;
 
 import classesdedados.usuarioESenhas;
 import java.util.ArrayList;

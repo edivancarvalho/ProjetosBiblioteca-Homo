@@ -13,9 +13,8 @@ public class Exemplares {
 
     public Exemplares() {
     }
- 
-    
-    
+   
+   
     public float getAnodePublicacao() {
         return anodePublicacao;
     }
@@ -66,7 +65,9 @@ public class Exemplares {
 
     @Override
     public String toString() {
-        return "Exemplares{" + "anodePublicacao=" + anodePublicacao + ", dataDeAquisicao=" + dataDeAquisicao + ", precoDeCompra=" + precoDeCompra + ", edicao=" + edicao + ", status=" + status + ", descri\u00e7\u00e3o=" + descrição + '}';
+        return "Exemplares{" + "anodePublicacao=" + anodePublicacao + ""
+                + ", dataDeAquisicao=" + dataDeAquisicao + ", precoDeCompra=" 
+                + precoDeCompra + ", edicao=" + edicao + ", status=" + status + ", descri\u00e7\u00e3o=" + descrição + '}';
     }
     
     

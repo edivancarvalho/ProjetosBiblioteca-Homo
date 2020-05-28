@@ -3,7 +3,7 @@ package persistencias;
 
 import classesdedados.usuarioESenhas;
 import gui.TelaMenuPrincipal;
-import interfaces.CRUDsenha;
+import Lixo.CRUDsenha;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import javax.swing.JOptionPane;
