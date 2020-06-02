@@ -21,22 +21,20 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         jButton_HistoricoLivros = new javax.swing.JButton();
-        jButton_RelacaoLivros = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jPanel_Principal = new javax.swing.JPanel();
-        jDesktopPane1 = new javax.swing.JDesktopPane();
-        jLabel2 = new javax.swing.JLabel();
+        jButton_CadastroLocatario = new javax.swing.JButton();
         jButton_CadastrarUsuario = new javax.swing.JButton();
+        jDesktopPane1 = new javax.swing.JDesktopPane();
+        jButton_Teste = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de Biblioteca - Tela Principal");
 
-        jLabel1.setText("Tela Principal");
+        jPanel1.setBackground(java.awt.Color.darkGray);
 
         jButton_HistoricoLivros.setText("Histórico do Locatario");
         jButton_HistoricoLivros.addActionListener(new java.awt.event.ActionListener() {
@@ -45,36 +43,18 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButton_RelacaoLivros.setText("Relação de Livros");
-
         jButton3.setText("Livros Emprestados");
 
         jButton4.setText("Livros reservados");
 
         jButton5.setText("Cadastro Livros");
 
-        jButton6.setText("Cadastro de Locatarios");
-
-        jPanel_Principal.setBackground(new java.awt.Color(64, 64, 64));
-
-        javax.swing.GroupLayout jPanel_PrincipalLayout = new javax.swing.GroupLayout(jPanel_Principal);
-        jPanel_Principal.setLayout(jPanel_PrincipalLayout);
-        jPanel_PrincipalLayout.setHorizontalGroup(
-            jPanel_PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_PrincipalLayout.createSequentialGroup()
-                .addGap(125, 125, 125)
-                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel_PrincipalLayout.setVerticalGroup(
-            jPanel_PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_PrincipalLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(214, 214, 214))
-        );
-
-        jLabel2.setText("Godofredo e Associados");
+        jButton_CadastroLocatario.setText("Cadastro de Locatarios");
+        jButton_CadastroLocatario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_CadastroLocatarioActionPerformed(evt);
+            }
+        });
 
         jButton_CadastrarUsuario.setText("Cadastrar Usuario");
         jButton_CadastrarUsuario.addActionListener(new java.awt.event.ActionListener() {
@@ -83,58 +63,69 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jButton_Teste.setText("Teste");
+        jButton_Teste.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_TesteActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton_CadastrarUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
+                    .addComponent(jButton_CadastroLocatario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton_HistoricoLivros, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton_Teste, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, Short.MAX_VALUE)
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1002, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(153, 153, 153)
+                .addComponent(jButton_HistoricoLivros)
+                .addGap(18, 18, 18)
+                .addComponent(jButton_Teste)
+                .addGap(18, 18, 18)
+                .addComponent(jButton3)
+                .addGap(18, 18, 18)
+                .addComponent(jButton4)
+                .addGap(18, 18, 18)
+                .addComponent(jButton5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton_CadastroLocatario)
+                .addGap(18, 18, 18)
+                .addComponent(jButton_CadastrarUsuario)
+                .addContainerGap(189, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jDesktopPane1)
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 566, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(359, 359, 359))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton_HistoricoLivros, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton_RelacaoLivros, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton_CadastrarUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addGap(61, 61, 61)
-                .addComponent(jPanel_Principal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(32, 32, 32)
-                .addComponent(jLabel2)
-                .addGap(34, 34, 34)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton_HistoricoLivros)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton_RelacaoLivros)
-                        .addGap(26, 26, 26)
-                        .addComponent(jButton3)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton4)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton5)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton6)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton_CadastrarUsuario)
-                        .addGap(32, 32, 32)
-                        .addComponent(jLabel1)
-                        .addGap(0, 144, Short.MAX_VALUE))
-                    .addComponent(jPanel_Principal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -146,16 +137,37 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         TelaCadastroUsuario1 telaCadUser = new TelaCadastroUsuario1();
-        jPanel_Principal.add(telaCadUser);
+        jDesktopPane1.add(telaCadUser);
         telaCadUser.setVisible(true);
     }//GEN-LAST:event_jButton_CadastrarUsuarioActionPerformed
 
     private void jButton_HistoricoLivrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_HistoricoLivrosActionPerformed
         // TODO add your handling code here:
-        cadastroUsuario cadUsuario = new cadastroUsuario();
-        cadUsuario.setVisible(true);
-        dispose();
+//        cadastroUsuario cadUsuario = new cadastroUsuario();
+//        cadUsuario.setVisible(true);
+//        dispose();
+        
+        
     }//GEN-LAST:event_jButton_HistoricoLivrosActionPerformed
+
+    private void jButton_CadastroLocatarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CadastroLocatarioActionPerformed
+        // TODO add your handling code here:
+        
+        CadastroCliente tel2 = new CadastroCliente();
+        //jDesktopPane1.add(tel2);
+        tel2.setVisible(true);
+        // onde por a tela?
+        dispose();
+    }//GEN-LAST:event_jButton_CadastroLocatarioActionPerformed
+
+    private void jButton_TesteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_TesteActionPerformed
+        // TODO add your handling code here:
+       TelaSlider telslide = new TelaSlider();
+        //jDesktopPane1.add(telslide);
+        telslide.setVisible(true);
+        dispose();
+        
+    }//GEN-LAST:event_jButton_TesteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -201,13 +213,13 @@ public class TelaMenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton_CadastrarUsuario;
+    private javax.swing.JButton jButton_CadastroLocatario;
     private javax.swing.JButton jButton_HistoricoLivros;
-    private javax.swing.JButton jButton_RelacaoLivros;
+    private javax.swing.JButton jButton_Teste;
     private javax.swing.JDesktopPane jDesktopPane1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel_Principal;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+
+    
 }
